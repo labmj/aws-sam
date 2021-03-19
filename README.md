@@ -205,15 +205,6 @@ Resources:
 
 ![image](https://user-images.githubusercontent.com/79297534/111749517-401d3680-88d5-11eb-99ae-8a5d1b955b4d.png)
 
-![image](https://user-images.githubusercontent.com/79297534/111749926-d5202f80-88d5-11eb-90f2-c771e9d9d666.png)
-
-![image](https://user-images.githubusercontent.com/79297534/111750148-32b47c00-88d6-11eb-99c3-bf5b35753787.png)
-
-![image](https://user-images.githubusercontent.com/79297534/111750903-2977df00-88d7-11eb-86ee-7fa8f27d5085.png)
-
-
-
-
 ```json
 {
     "Statement": [
@@ -242,6 +233,17 @@ Resources:
     "Version": "2012-10-17"
 }
 ```
+
+
+![image](https://user-images.githubusercontent.com/79297534/111749926-d5202f80-88d5-11eb-90f2-c771e9d9d666.png)
+
+![image](https://user-images.githubusercontent.com/79297534/111750148-32b47c00-88d6-11eb-99c3-bf5b35753787.png)
+
+![image](https://user-images.githubusercontent.com/79297534/111750903-2977df00-88d7-11eb-86ee-7fa8f27d5085.png)
+
+
+
+
 
 데이터 만들기
 
