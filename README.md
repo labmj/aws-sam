@@ -187,8 +187,58 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/111747059-2e865f80-88d2-11eb-9d1d-324407440a50.png)
 
 
+- Cloud Formation에 필요한 역할 만들기 (사용 사례에서 CloudFormation 선택)
+
+![image](https://user-images.githubusercontent.com/79297534/111748949-74dcbe00-88d4-11eb-8ebf-074240b796d9.png)
 
 
+- AWSLambdaExecute 정책 추가
+
+![image](https://user-images.githubusercontent.com/79297534/111749238-d866eb80-88d4-11eb-82e2-78505608c566.png)
+
+
+- AWSLambdaExecute 정책 추가
+
+![image](https://user-images.githubusercontent.com/79297534/111749368-02b8a900-88d5-11eb-9424-aa4b46cf32d1.png)
+
+- 아래 그림과 같이 정책 생성후 추가
+
+![image](https://user-images.githubusercontent.com/79297534/111749517-401d3680-88d5-11eb-99ae-8a5d1b955b4d.png)
+
+![image](https://user-images.githubusercontent.com/79297534/111749926-d5202f80-88d5-11eb-90f2-c771e9d9d666.png)
+
+![image](https://user-images.githubusercontent.com/79297534/111750148-32b47c00-88d6-11eb-99c3-bf5b35753787.png)
+
+
+
+```json
+{
+    "Statement": [
+        {
+            "Action": [
+                "apigateway:*",
+                "codedeploy:*",
+                "lambda:*",
+                "cloudformation:CreateChangeSet",
+                "iam:GetRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:AttachRolePolicy",
+                "iam:DeleteRolePolicy",
+                "iam:DetachRolePolicy",
+                "iam:PassRole",
+                "s3:GetObject",
+                "s3:GetObjectVersion",
+                "s3:GetBucketVersioning"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        }
+    ],
+    "Version": "2012-10-17"
+}
+```
 
 데이터 만들기
 
