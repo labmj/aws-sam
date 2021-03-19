@@ -243,6 +243,10 @@ Resources:
 
 
 
+- 파이프라인 설정 (CICD 부분 소문자로 바꿔야함..) TAG 규칙 참고
+
+![image](https://user-images.githubusercontent.com/79297534/111753332-1581ac80-88da-11eb-8d59-b9f4e15e49c5.png)
+
 
 
 데이터 만들기
