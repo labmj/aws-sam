@@ -26,26 +26,166 @@
 
 - functions/stock_checker/app.py
 
+```python
+from random import randint
+
+
+def lambda_handler(event, context):
+
+    stock_price=event['stock_price']
+    
+    return {"stock_price": stock_price}
+
+```
+
+
 ![image](https://user-images.githubusercontent.com/79297534/111746136-f6325180-88d0-11eb-977f-c12d254fa272.png)
 
 
 - functions/stock_buyer/app.py
+
+```python
+from datetime import datetime
+from random import randint
+from uuid import uuid4
+
+
+def lambda_handler(event, context):
+    # Get the price of the stock provided as input
+    stock_price = event["stock_price"]
+    # Mocked result of a stock buying transaction
+    transaction_result = {
+        # "id": str(uuid4()),  # Unique ID for the transaction
+        "price": str(stock_price),  # Price of each share
+        "type": "buy",  # Type of transaction (buy/sell)
+        "qty": str(
+            randint(1, 10)
+        ),  # Number of shares bought/sold (We are mocking this as a random integer between 1 and 10)
+        "timestamp": datetime.now().isoformat(),  # Timestamp of the when the transaction was completed
+    }
+    return transaction_result
+
+
+```
+
 
 ![image](https://user-images.githubusercontent.com/79297534/111746435-63de7d80-88d1-11eb-9a10-0195be44f7cb.png)
 
 
 - stock_trader.asl.json
 
+
+```json
+{
+    "Comment": "A state machine that does mock stock trading.",
+    "StartAt": "Check Stock Value",
+    "States": {
+        "Check Stock Value": {
+            "Type": "Task",
+            "Resource": "${StockCheckerFunctionArn}",
+            "Retry": [
+                {
+                    "ErrorEquals": [
+                        "States.TaskFailed"
+                    ],
+                    "IntervalSeconds": 15,
+                    "MaxAttempts": 5,
+                    "BackoffRate": 1.5
+                }
+            ],
+            "Next": "Buy Stock"
+        },
+        "Buy Stock": {
+            "Type": "Task",
+            "Resource": "${StockBuyerFunctionArn}",
+            "Retry": [
+                {
+                    "ErrorEquals": [
+                        "States.TaskFailed"
+                    ],
+                    "IntervalSeconds": 2,
+                    "MaxAttempts": 3,
+                    "BackoffRate": 1
+                }
+            ],
+            "End": true
+        }
+        
+    }
+}
+
+```
+
 ![image](https://user-images.githubusercontent.com/79297534/111746510-7c4e9800-88d1-11eb-81fb-3033a2be6de0.png)
 
 - buildspec.yml
+```yaml
+version: 0.2
+phases:
+ install:
+  runtime-versions:
+   python: 3.8
+ build: 
+  commands:
+   - sam build
+   - export BUCKET=test-pipeline-output-bucket1
+   - sam package --s3-bucket $BUCKET --output-template-file outputtemplate.yml
+artifacts:
+ type: zip
+ files:
+  - template.yml
+  - outputtemplate.yml
+```
 
 ![image](https://user-images.githubusercontent.com/79297534/111746728-c0419d00-88d1-11eb-97ea-eb1d8455c397.png)
 
 
 - template.yaml
 
+
+```yml
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  TEST_SECOND
+
+  Sample SAM Template for TEST_SECOND
+
+Resources:
+  StockTradingStateMachine:
+    Type: AWS::Serverless::StateMachine # More info about State Machine Resource: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html
+    Properties:
+      DefinitionUri: statemachine/stock_trader.asl.json
+      DefinitionSubstitutions:
+        StockCheckerFunctionArn: !GetAtt StockCheckerFunction.Arn
+        StockBuyerFunctionArn: !GetAtt StockBuyerFunction.Arn
+      
+      Policies: # Find out more about SAM policy templates: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-policy-templates.html
+        - LambdaInvokePolicy:
+            FunctionName: !Ref StockCheckerFunction
+      
+        - LambdaInvokePolicy:
+            FunctionName: !Ref StockBuyerFunction
+    
+
+  StockCheckerFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html
+    Properties:
+      CodeUri: functions/stock_checker/
+      Handler: app.lambda_handler
+      Runtime: python3.8
+
+  StockBuyerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: functions/stock_buyer/
+      Handler: app.lambda_handler
+      Runtime: python3.8
+
+```
+
 ![image](https://user-images.githubusercontent.com/79297534/111747059-2e865f80-88d2-11eb-9d1d-324407440a50.png)
+
 
 
 
