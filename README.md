@@ -4,14 +4,11 @@
 - git 설정
 
 
-- 시작  AICO 뒤에 있는 문자열 소문자로 수정필요 (cdcipipelinetutorial 소문자로 변경 필요) -TAG 명명 규칙 
+- 시작 (TAG 명명 규칙 참조) 
 
+![image](https://user-images.githubusercontent.com/79297534/111930333-011cfa00-8afc-11eb-8ded-79d66e1beb45.png)
 
-![image](https://user-images.githubusercontent.com/79297534/111742359-63db7f00-88cb-11eb-91b7-149cad09e4e4.png)
-
-
-![image](https://user-images.githubusercontent.com/79297534/111742458-91c0c380-88cb-11eb-82d1-8304904c61c7.png)
-
+![image](https://user-images.githubusercontent.com/79297534/111930460-5d801980-8afc-11eb-8989-340c22daed02.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/111744392-8327db80-88ce-11eb-9f04-be5988e66fd6.png)
 
