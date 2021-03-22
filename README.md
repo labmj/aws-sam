@@ -230,6 +230,9 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/111932365-991ce280-8b00-11eb-8063-859cd4907f60.png)
 
 
+- CodeBuild 정책 생성 ( 역할은 만들어 놓은것 위주로 재사용을 지향)
+
+![image](https://user-images.githubusercontent.com/79297534/111946662-3ab32c80-8b1f-11eb-8754-fb039283ec50.png)
 
 
 
@@ -248,7 +251,7 @@ Resources:
 
 - 역할은 기존에 만든것이 있을 경우, 기존 것을 사용하는것을 지향함
 
-![image](https://user-images.githubusercontent.com/79297534/111926165-12abd500-8aef-11eb-8db9-d842569ec08d.png)
+![image](https://user-images.githubusercontent.com/79297534/111947211-54a13f00-8b20-11eb-94d2-db1cea25722d.png)
 
 
 ![image](https://user-images.githubusercontent.com/79297534/111926227-54d51680-8aef-11eb-8b48-181e73cc7242.png)
