@@ -1,5 +1,9 @@
 # CI/CD pipeline to deploy functions
 
+![image](https://user-images.githubusercontent.com/79297534/111967487-7360ff00-8b3b-11eb-9d85-ebc94ec8ad36.png)
+
+
+
 사전 준비
 - git 설정
 
