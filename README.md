@@ -122,7 +122,7 @@ phases:
  build: 
   commands:
    - sam build
-   - export BUCKET=test-pipeline-output-bucket1
+   - export BUCKET=aire-aico-cicdpipelinetutorial-s3
    - sam package --s3-bucket $BUCKET --output-template-file outputtemplate.yml
 artifacts:
  type: zip
@@ -249,23 +249,19 @@ Resources:
 
 ![image](https://user-images.githubusercontent.com/79297534/111926141-01fb5f00-8aef-11eb-8721-e442e3c55704.png)
 
-- 역할은 기존에 만든것이 있을 경우, 기존 것을 사용하는것을 지향함
+- 역할은 기존에 만든것이 있을 경우, 기존 것을 사용하는것을 지향함 ( !!!! 역할 ARN 아래 체크 풀어주기 )
 
 ![image](https://user-images.githubusercontent.com/79297534/111947211-54a13f00-8b20-11eb-94d2-db1cea25722d.png)
 
 
 ![image](https://user-images.githubusercontent.com/79297534/111926227-54d51680-8aef-11eb-8b48-181e73cc7242.png)
 
-- CodeBuild에서 만든 정책에 AmazonS3FullAccess 넣어주기 (새창 - IAM 서비스 선택)
-
-![image](https://user-images.githubusercontent.com/79297534/111926243-73d3a880-8aef-11eb-9d7c-5b3f57d54764.png)
-
-![image](https://user-images.githubusercontent.com/79297534/111926273-8e0d8680-8aef-11eb-871a-f340f2d0bad1.png)
-
 
 - Deploy
 
-![image](https://user-images.githubusercontent.com/79297534/111926397-06744780-8af0-11eb-96c8-71d402d43582.png)
+![image](https://user-images.githubusercontent.com/79297534/111947996-c75eea00-8b21-11eb-9b9f-607f573fee41.png)
+
+
 
 - 추가작업
 
