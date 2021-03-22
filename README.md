@@ -10,7 +10,8 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/111930460-5d801980-8afc-11eb-8989-340c22daed02.png)
 
-![image](https://user-images.githubusercontent.com/79297534/111744392-8327db80-88ce-11eb-9f04-be5988e66fd6.png)
+![image](https://user-images.githubusercontent.com/79297534/111930930-67eee300-8afd-11eb-9de4-4aec97c93a3a.png)
+
 
 구조
 
@@ -35,8 +36,6 @@ def lambda_handler(event, context):
 
 ```
 
-
-![image](https://user-images.githubusercontent.com/79297534/111746136-f6325180-88d0-11eb-977f-c12d254fa272.png)
 
 
 - functions/stock_buyer/app.py
@@ -64,9 +63,6 @@ def lambda_handler(event, context):
 
 
 ```
-
-
-![image](https://user-images.githubusercontent.com/79297534/111746435-63de7d80-88d1-11eb-9a10-0195be44f7cb.png)
 
 
 - stock_trader.asl.json
@@ -113,7 +109,6 @@ def lambda_handler(event, context):
 
 ```
 
-![image](https://user-images.githubusercontent.com/79297534/111746510-7c4e9800-88d1-11eb-81fb-3033a2be6de0.png)
 
 - buildspec.yml
 ```yaml
@@ -134,7 +129,6 @@ artifacts:
   - outputtemplate.yml
 ```
 
-![image](https://user-images.githubusercontent.com/79297534/111746728-c0419d00-88d1-11eb-97ea-eb1d8455c397.png)
 
 
 - template.yaml
@@ -180,8 +174,6 @@ Resources:
       Runtime: python3.8
 
 ```
-
-![image](https://user-images.githubusercontent.com/79297534/111747059-2e865f80-88d2-11eb-9d1d-324407440a50.png)
 
 
 - Cloud Formation에 필요한 역할 만들기 (사용 사례에서 CloudFormation 선택)
