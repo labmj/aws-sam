@@ -4,7 +4,7 @@
 - git 설정
 
 
-- 시작
+- 시작  AICO 뒤에 있는 문자열 소문자로 수정필요 (cdcipipelinetutorial 소문자로 변경 필요) -TAG 명명 규칙 
 
 
 ![image](https://user-images.githubusercontent.com/79297534/111742359-63db7f00-88cb-11eb-91b7-149cad09e4e4.png)
@@ -197,7 +197,7 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/111749238-d866eb80-88d4-11eb-82e2-78505608c566.png)
 
 
-- AWSLambdaExecute 정책 추가
+- 새로운 정책 추가 (명명법 수정 필요)
 
 ![image](https://user-images.githubusercontent.com/79297534/111749368-02b8a900-88d5-11eb-9424-aa4b46cf32d1.png)
 
@@ -243,9 +243,41 @@ Resources:
 
 
 
-- 파이프라인 설정 (CICD 부분 소문자로 바꿔야함..) TAG 규칙 참고
+- 파이프라인 설정
 
-![image](https://user-images.githubusercontent.com/79297534/111753332-1581ac80-88da-11eb-8d59-b9f4e15e49c5.png)
+![image](https://user-images.githubusercontent.com/79297534/111926034-84375380-8aee-11eb-96a0-510da0efe859.png)
+
+![image](https://user-images.githubusercontent.com/79297534/111926055-9addaa80-8aee-11eb-981a-378a2962e133.png)
+
+
+![image](https://user-images.githubusercontent.com/79297534/111926072-ad57e400-8aee-11eb-8a17-ca17472cdb9b.png)
+
+![image](https://user-images.githubusercontent.com/79297534/111926141-01fb5f00-8aef-11eb-8721-e442e3c55704.png)
+
+- 역할은 기존에 만든것이 있을 경우, 기존 것을 사용하는것을 지향함
+
+![image](https://user-images.githubusercontent.com/79297534/111926165-12abd500-8aef-11eb-8db9-d842569ec08d.png)
+
+
+![image](https://user-images.githubusercontent.com/79297534/111926227-54d51680-8aef-11eb-8b48-181e73cc7242.png)
+
+- CodeBuild에서 만든 정책에 AmazonS3FullAccess 넣어주기 (새창 - IAM 서비스 선택)
+
+![image](https://user-images.githubusercontent.com/79297534/111926243-73d3a880-8aef-11eb-9d7c-5b3f57d54764.png)
+
+![image](https://user-images.githubusercontent.com/79297534/111926273-8e0d8680-8aef-11eb-871a-f340f2d0bad1.png)
+
+
+- Deploy
+
+![image](https://user-images.githubusercontent.com/79297534/111926397-06744780-8af0-11eb-96c8-71d402d43582.png)
+
+- 추가작업
+
+![image](https://user-images.githubusercontent.com/79297534/111926677-29532b80-8af1-11eb-88d2-37593ee6473d.png)
+
+
+![image](https://user-images.githubusercontent.com/79297534/111926663-1a6c7900-8af1-11eb-96b0-aa34fb08cff3.png)
 
 
 
