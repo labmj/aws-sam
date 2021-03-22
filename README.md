@@ -181,11 +181,6 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/111748949-74dcbe00-88d4-11eb-8ebf-074240b796d9.png)
 
 
-- AWSLambdaExecute 정책 추가
-
-![image](https://user-images.githubusercontent.com/79297534/111749238-d866eb80-88d4-11eb-82e2-78505608c566.png)
-
-
 - 새로운 정책 추가 (명명법 수정 필요)
 
 ![image](https://user-images.githubusercontent.com/79297534/111749368-02b8a900-88d5-11eb-9424-aa4b46cf32d1.png)
@@ -225,10 +220,15 @@ Resources:
 
 ![image](https://user-images.githubusercontent.com/79297534/111931625-ebf59a80-8afe-11eb-89c3-c0d21fb94832.png)
 
+![image](https://user-images.githubusercontent.com/79297534/111931807-658d8880-8aff-11eb-983b-b51a34869e38.png)
 
-![image](https://user-images.githubusercontent.com/79297534/111750148-32b47c00-88d6-11eb-99c3-bf5b35753787.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/111750903-2977df00-88d7-11eb-86ee-7fa8f27d5085.png)
+
+
+![image](https://user-images.githubusercontent.com/79297534/111932365-991ce280-8b00-11eb-8063-859cd4907f60.png)
+
+
 
 
 
