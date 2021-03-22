@@ -6,7 +6,8 @@
 
 - 시작 (TAG 명명 규칙 참조) 
 
-![image](https://user-images.githubusercontent.com/79297534/111930333-011cfa00-8afc-11eb-8ded-79d66e1beb45.png)
+![image](https://user-images.githubusercontent.com/79297534/111940583-798eb580-8b12-11eb-9974-df2f128da167.png)
+
 
 ![image](https://user-images.githubusercontent.com/79297534/111930460-5d801980-8afc-11eb-8989-340c22daed02.png)
 
@@ -19,7 +20,8 @@
 
 위와 같은 구조 만든 후
 
-![image](https://user-images.githubusercontent.com/79297534/111744906-47414600-88cf-11eb-8271-c1ba9d7fa4c8.png)
+![image](https://user-images.githubusercontent.com/79297534/111939253-20715280-8b0f-11eb-8b6f-54a3dc1bdd0b.png)
+
 
 
 - functions/stock_checker/app.py
@@ -223,7 +225,6 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/111931807-658d8880-8aff-11eb-983b-b51a34869e38.png)
 
 
-![image](https://user-images.githubusercontent.com/79297534/111750903-2977df00-88d7-11eb-86ee-7fa8f27d5085.png)
 
 
 ![image](https://user-images.githubusercontent.com/79297534/111932365-991ce280-8b00-11eb-8063-859cd4907f60.png)
@@ -286,7 +287,7 @@ git 연결
 
 ![image](https://user-images.githubusercontent.com/79297534/111422171-981b3800-8731-11eb-843f-988c6f6b32a6.png)
 
-
+```
 TestRepository
 ├── buildspec.yml
 ├── functions
@@ -299,3 +300,4 @@ TestRepository
 ├── statemachine
 │   └── stock_trader.asl.json
 └── template.yml
+```
