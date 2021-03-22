@@ -235,11 +235,10 @@ Resources:
 
 - 파이프라인 설정
 
-![image](https://user-images.githubusercontent.com/79297534/111926034-84375380-8aee-11eb-96a0-510da0efe859.png)
+![image](https://user-images.githubusercontent.com/79297534/111945938-f1aea880-8b1d-11eb-9045-8487d2bafab1.png)
+
 
 ![image](https://user-images.githubusercontent.com/79297534/111944681-8ebc1200-8b1b-11eb-882c-a5c79b8e55b0.png)
-
-
 
 
 
