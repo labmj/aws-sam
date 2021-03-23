@@ -281,7 +281,7 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/112080496-73a5dc80-8bc5-11eb-8a60-68df24ebef4d.png)
 
 
-- 추가작업 아래 그림처럼 만든후 저장하고 변경 사항 릴리스 선택
+- Deploy 추가작업 아래 그림처럼 만든후 저장하고 변경 사항 릴리스 선택
 
 ![image](https://user-images.githubusercontent.com/79297534/111926677-29532b80-8af1-11eb-88d2-37593ee6473d.png)
 
@@ -289,7 +289,18 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/112080599-a2bc4e00-8bc5-11eb-96fd-63ba1f3ca71e.png)
 
 
+- AWS Lambda 서비스에서 아래 그림같이 생성 확인
 
+![image](https://user-images.githubusercontent.com/79297534/112081172-9258a300-8bc6-11eb-9ae9-6e63234b8ec1.png)
+
+
+- 실행 확인
+
+![image](https://user-images.githubusercontent.com/79297534/112081369-e499c400-8bc6-11eb-88b4-837fea9a2485.png)
+
+![image](https://user-images.githubusercontent.com/79297534/112081442-02672900-8bc7-11eb-991b-378615df78ca.png)
+
+![image](https://user-images.githubusercontent.com/79297534/112081458-0a26cd80-8bc7-11eb-94f8-241a0c833239.png)
 
 
 - 번외
