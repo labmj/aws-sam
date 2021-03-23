@@ -20,7 +20,21 @@
 
 구조
 
-![image](https://user-images.githubusercontent.com/79297534/111744156-1b719080-88ce-11eb-9015-b44a6ffa4207.png)
+```
+Repository
+├── buildspec.yml
+├── functions
+│   ├── stock_buyer
+│   │   ├── app.py
+│   │   └── requirements.txt
+│   └── stock_checker
+│       ├── app.py
+│       └── requirements.txt
+├── statemachine
+│   └── stock_trader.asl.json
+└── template.yml
+```
+
 
 위와 같은 구조 만든 후
 
@@ -253,7 +267,7 @@ Resources:
 
 ![image](https://user-images.githubusercontent.com/79297534/111926141-01fb5f00-8aef-11eb-8721-e442e3c55704.png)
 
-- 역할은 기존에 만든것이 있을 경우, 기존 것을 사용하는것을 지향함 ( !!!! 역할 ARN 아래 체크 풀어주기 )
+- 역할은 기존에 만든것이 있을 경우, 기존 것을 사용하는것을 지향함
 
 ![image](https://user-images.githubusercontent.com/79297534/111947211-54a13f00-8b20-11eb-94d2-db1cea25722d.png)
 
@@ -267,12 +281,12 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/112080496-73a5dc80-8bc5-11eb-8a60-68df24ebef4d.png)
 
 
-- 추가작업
+- 추가작업 아래 그림처럼 만든후 저장하고 변경 사항 릴리스 선택
 
 ![image](https://user-images.githubusercontent.com/79297534/111926677-29532b80-8af1-11eb-88d2-37593ee6473d.png)
 
 
-![image](https://user-images.githubusercontent.com/79297534/111926663-1a6c7900-8af1-11eb-96b0-aa34fb08cff3.png)
+![image](https://user-images.githubusercontent.com/79297534/112080599-a2bc4e00-8bc5-11eb-96fd-63ba1f3ca71e.png)
 
 
 
@@ -281,33 +295,9 @@ Resources:
 - 번외
 
 
-데이터 만들기
-
-
-
-우선 python 가상환경 만듦 
-
-git 연결
-
-후에 sam init 과정
+sam init tutorial
 
 ![image](https://user-images.githubusercontent.com/79297534/111422235-aff2bc00-8731-11eb-9d68-e2f9b4f85c04.png)
 
-구조
 
-![image](https://user-images.githubusercontent.com/79297534/111422171-981b3800-8731-11eb-843f-988c6f6b32a6.png)
 
-```
-TestRepository
-├── buildspec.yml
-├── functions
-│   ├── stock_buyer
-│   │   ├── app.py
-│   │   └── requirements.txt
-│   └── stock_checker
-│       ├── app.py
-│       └── requirements.txt
-├── statemachine
-│   └── stock_trader.asl.json
-└── template.yml
-```
