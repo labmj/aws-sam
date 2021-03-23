@@ -263,8 +263,8 @@ Resources:
 
 - Deploy
 
-![image](https://user-images.githubusercontent.com/79297534/111947996-c75eea00-8b21-11eb-9b9f-607f573fee41.png)
 
+![image](https://user-images.githubusercontent.com/79297534/112080496-73a5dc80-8bc5-11eb-8a60-68df24ebef4d.png)
 
 
 - 추가작업
