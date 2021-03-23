@@ -36,7 +36,7 @@ Repository
 ```
 
 
-위와 같은 구조 만든 후
+위와 같은 구조 만든 후 아래와 같은 방법으로 로컬에서 작업한 코드 push
 
 ![image](https://user-images.githubusercontent.com/79297534/111939253-20715280-8b0f-11eb-8b6f-54a3dc1bdd0b.png)
 
@@ -201,11 +201,11 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/111748949-74dcbe00-88d4-11eb-8ebf-074240b796d9.png)
 
 
-- 새로운 정책 추가 (명명법 수정 필요)
+- 새로운 정책 추가
 
 ![image](https://user-images.githubusercontent.com/79297534/111749368-02b8a900-88d5-11eb-9424-aa4b46cf32d1.png)
 
-- 아래 그림과 같이 정책 생성후 추가하여 역할 생성
+- 아래 그림과 같이 정책 생성후 추가하여 역할 생성 (현재는 명명을 AIRE-AICO-lambda-cicd-Role -> AIRE-AICO-cicd-cloudformation-Role로 변경함)
 
 ![image](https://user-images.githubusercontent.com/79297534/111749517-401d3680-88d5-11eb-99ae-8a5d1b955b4d.png)
 
@@ -248,7 +248,7 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/111932365-991ce280-8b00-11eb-8063-859cd4907f60.png)
 
 
-- CodeBuild 정책 생성 ( 역할은 만들어 놓은것 위주로 재사용을 지향)
+- CodeBuild 정책 생성 ( 역할은 만들어 놓은것 위주로 재사용을 지향) !!추가로 CodeCommit에 대한 정책 추가 시켜주기
 
 ![image](https://user-images.githubusercontent.com/79297534/111946662-3ab32c80-8b1f-11eb-8754-fb039283ec50.png)
 
@@ -275,7 +275,7 @@ Resources:
 ![image](https://user-images.githubusercontent.com/79297534/111926227-54d51680-8aef-11eb-8b48-181e73cc7242.png)
 
 
-- Deploy
+- Deploy 
 
 
 ![image](https://user-images.githubusercontent.com/79297534/112080496-73a5dc80-8bc5-11eb-8a60-68df24ebef4d.png)
